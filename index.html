@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="relative flex items-center justify-center min-h-screen px-4 bg-no-repeat font-kumbh bg-primary">
+        <!-- Top background -->
+        <img src="./images/bg-pattern-top.svg" alt="Background Top"
+            class="fixed top-0 left-0 -translate-y-1/2 -translate-x-1/3 md:-translate-x-1/2 xl:-translate-x-1/5">
+
+        <!-- Bottom background -->
+        <img src="./images/bg-pattern-bottom.svg" alt="Background Bottom"
+            class="fixed bottom-0 right-0 translate-y-1/2 translate-x-1/3 md:translate-x-1/2 xl:translate-x-1/5">
+
+        <!-- Card -->
+        <div class="bg-white rounded-xl max-w-[350px] w-full overflow-clip z-10 card">
+            <!-- Profile image/background -->
+            <div class="relative bg-[url('../images/bg-pattern-card.svg')] bg-cover bg-no-repeat h-32">
+                <img src="./images/image-victor.jpg" alt="Profile Image"
+                    class="absolute w-24 h-24 -translate-x-1/2 translate-y-1/2 border-4 border-white rounded-full top-1/4 left-1/2">
+            </div>
+            <!-- Name -->
+            <h1 class="mt-16 text-lg font-bold text-center">Victor Crest <span
+                    class="font-normal text-tertiary">26</span></h1>
+            <!-- Location -->
+            <p class="text-center text-tertiary">London</p>
+            <!-- Bio -->
+            <div class="flex py-6 border-t border-gray-200 justify-evenly mt-7">
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">80K</h2>
+                    <p class="text-sm text-tertiary">Followers</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">803K</h2>
+                    <p class="text-sm text-tertiary">Likes</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">1.4K</h2>
+                    <p class="text-sm text-tertiary">Photos</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
